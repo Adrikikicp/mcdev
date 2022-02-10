@@ -1,0 +1,25 @@
+{
+    "name": "mcdev",
+    "displayName": "Minecraft Development",
+    "description": "Powerful tool to make fabric & forge mods",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.64.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "minecraft",
+            "aliases": ["Minecraft Mod File", "minecraft"],
+            "extensions": [".minecraft",".mc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "minecraft",
+            "scopeName": "data.minecraft",
+            "path": "./syntaxes/minecraft.tmLanguage.json"
+        }]
+    }
+}
